@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CRMController">
+   <children>
+      <TabPane layoutY="41.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="502.0" prefWidth="728.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Ventas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="643.0" text="Es el encargado de gestionar las ventas de los productos&#10;de la empresa.">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Marketing">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="643.0" text="Aquí se realizan las estrategias para promocionar los&#10;productos y mantener al cliente con la atención puesta&#10;hacía la empresa Argos.">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Servicio al cliente">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="643.0" text="Aquí se realiza todo el servicio post venta al cual el cliente &#10;puede acceder en caso de necesitarlo.&#10;">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TabPane>
+      <Button id="sub" layoutX="662.0" layoutY="503.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <Button id="sub" layoutX="14.0" layoutY="503.0" mnemonicParsing="false" onAction="#actualizar" text="act" />
+      <Label id="header" layoutX="-2.0" layoutY="1.0" prefHeight="38.0" prefWidth="728.0" text="CRM" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProduccionController">
+   <children>
+      <TabPane layoutY="41.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="502.0" prefWidth="728.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Ingenieria del producto">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="406.0" prefWidth="653.0" text="Aquí se incluye el diseño, desarrollo, selección de &#10;materiales, y transición desde la etapa de prototipo&#10;hasta la fabricación del producto. El término incluye&#10;desarrollar el concepto del producto y el diseño y &#10;desarrollo de sus componentes y partes mecánicas,&#10;electrónicas y de software. Está ligado con el planeamiento&#10;del producto, estos buscan crear nuevos productos o mejorar&#10;los ya existentes que posee Argos.">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Control de calidad">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="406.0" prefWidth="653.0" text="Está encargada de realizar seguimiento de los procesos &#10;mediante programas, herramientas o técnicas con el&#10;objetivo de mejorar la calidad de los productos de Argos.&#10;El objetivo del control de calidad de Argos es asegurar la&#10;mejora continua de los procesos, productos y servicios.">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Direccion de operaciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="14.0" layoutY="33.0" prefHeight="379.0" prefWidth="627.0" text="Esta se encarga de implementar los objetivos estratégicos&#10;de la empresa y de incrementar el valor de los productos&#10;para satisfacer las necesidades de los clientes.">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TabPane>
+      <Button id="sub" layoutX="662.0" layoutY="503.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <Button id="sub" layoutX="14.0" layoutY="503.0" mnemonicParsing="false" onAction="#actualizar" text="act" />
+      <Label id="header" layoutX="-2.0" layoutY="1.0" prefHeight="38.0" prefWidth="728.0" text="Producción" />
+   </children>
+</AnchorPane>
