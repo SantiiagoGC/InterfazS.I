@@ -5,28 +5,78 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RecursosController">
    <children>
       <TabPane layoutY="41.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="502.0" prefWidth="728.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Contratación">
-               <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-          <Tab text="Capacitaciones">
-               <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-            <Tab text="Comunicación">
-               <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-            <Tab text="Cultura">
+            <Tab text="Contratacion">
               <content>
-                <AnchorPane id="menu" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="116.0" layoutY="105.0" prefHeight="264.0" prefWidth="497.0" text="La contratación se encarga de conseguir nuevos&#10;empleados para la empresa según los puestos que&#10; esta necesite y hacer un filtro de cuáles son los más&#10; aptos para el cargo y cuales no y la nómina contempla&#10; todo lo concerniente a los registros financieros de las&#10; empresas sobre los salarios, bonificacionesy deducciones&#10; a sus empleados. Es decir, que es relevante dentro de la &#10;contabilidad de las compañías, al mismo tiempo que&#10; funciona como un estímulo importante en el&#10;bienestar de los empleados.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
               </content>
+            </Tab>
+            <Tab text="Capaciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="123.0" layoutY="158.0" prefHeight="157.0" prefWidth="482.0" text=" El principal objetivo de esta es crear un conjunto de &#10;acciones que conecten con la estrategia de la empresa,&#10;ayudando a que los colaboradores adquieran un mayor&#10; conocimiento y tengan más motivación para innovar &#10;dentro de su campo de trabajo.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Comunicacion interna">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="101.0" layoutY="155.0" prefHeight="164.0" prefWidth="527.0" text="Este permite dirigir, compartir y transformar las &#10;estrategias necesarias para alcanzar objetivos. &#10;Implicar a los empleados en la estrategia, compartir&#10;las decisiones y trasladar el papel que cada persona &#10;tiene, favorecerá alcanzar cualquier objetivo empresarial.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Gestion del cambio">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="101.0" layoutY="156.0" prefHeight="161.0" prefWidth="527.0" text="La gestión del cambio busca facilitar y conseguir la &#10;implementación exitosa de los procesos de transformación,&#10;lo que implica trabajar con y para las personas en la&#10;aceptación y asimilación de los cambios y en la reducción&#10;de la resistencia a los mismos dentro de una empresa.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Cultura Organizacional">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="92.0" layoutY="116.0" prefHeight="241.0" prefWidth="545.0" text="Trabaja permanentemente en la transformación del ambiente&#10;laboral incorporando iniciativas de vanguardia&#10;organizacional como el teletrabajo, las jornadas flexibles,&#10;la extensión de la lactancia hasta el primer año, el regreso&#10;progresivo de las mujeres después de culminada su licencia&#10;de maternidad, licencia especial para  hombres el mes&#10;siguiente al nacimiento de sus hijos, horarios escalonados&#10;y otras medidas que buscan generan un balance entre la&#10;vida personal y la vida laboral.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
             </Tab>
         </tabs>
          <cursor>

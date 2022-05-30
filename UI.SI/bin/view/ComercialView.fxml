@@ -5,24 +5,53 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ComercialController">
    <children>
       <TabPane layoutY="41.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="502.0" prefWidth="728.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Asesoría">
+            <Tab text="Asesoria comercial">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="104.0" layoutY="182.0" prefHeight="110.0" prefWidth="521.0" text="Este se encarga de ofrecer y vender los productos y servicios&#10;de la empresa argos.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Logistica comercial">
                <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-          <Tab text="Logística">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="112.0" layoutY="168.0" prefHeight="138.0" prefWidth="504.0" text="Se encarga de realizar los procesos de coordinación, &#10;gestión, almacenamiento, inventario, transporte, entrega&#10;y devolución, con la intención de hacer más amena la &#10;comercialización de la empresa.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Gestion comercial">
                <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-            <Tab text="Gestión">
-               <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="98.0" layoutY="180.0" prefHeight="114.0" prefWidth="533.0" text="tienen como objetivo principal dar a conocer su propuesta &#10;comercial al público. Es, por tanto, el canal de comunicación&#10;perfecto entre la compañía y los clientes.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
         </tabs>
          <cursor>
             <Cursor fx:constant="HAND" />

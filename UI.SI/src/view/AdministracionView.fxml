@@ -5,24 +5,53 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdministracionController">
    <children>
       <TabPane layoutY="41.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="502.0" prefWidth="728.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Directivos">
+            <Tab text="Directivos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="111.0" layoutY="168.0" prefHeight="138.0" prefWidth="506.0" text="Aquí hacen parte otros submódulos como lo serian:&#10;presidencia, la cual es el mayor cargo a nivel regional,&#10;luego sigue gerencia que es quien se encarga de gestionar&#10;la información de cada empresa en el departamento.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Subdirectores">
                <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-          <Tab text="Subdirección">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="108.0" layoutY="163.0" prefHeight="148.0" prefWidth="513.0" text="Se encarga de asistir en el desarrollo e implementación de &#10;planes y objetivos para el departamento. Colaborar con el&#10;director para coordinar y supervisar las operaciones diarias.&#10;Garantizar el cumplimiento de la normativa y las políticas &#10;internas.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Personal Administrativo">
                <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-            <Tab text="Personal">
-               <content>
-                  <AnchorPane id="menu" prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="106.0" layoutY="150.0" prefHeight="173.0" prefWidth="517.0" text="Se encarga de realizar las tareas administrativas y de oficina &#10;de acuerdo con los procedimientos establecidos por cada &#10;organización. Los administrativos gestionan, organizan, &#10;planifican, atienden y realizan tareas administrativas, &#10;de soporte y apoya a la organización.&#10;">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
         </tabs>
          <cursor>
             <Cursor fx:constant="HAND" />
